@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/OeWihA70)
 # Lab6: Customer Gift Package Reward Manager (Nested Tables + Packages + CASE)
 In this lab, we aim to work on the Customer-Order database that we installed in lab2. The schema of this database is provided in this assignment. You will need to use this schema in order to complete the lab. 
 
