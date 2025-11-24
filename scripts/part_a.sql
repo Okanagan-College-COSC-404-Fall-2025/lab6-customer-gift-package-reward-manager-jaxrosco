@@ -1,0 +1,15 @@
+CREATE TYPE t_gift_list IS TABLE OF VARCHAR2(100);
+/
+CREATE TABLE GIFT_CATALOG (
+    GIFT_ID NUMBER PRIMARY KEY,
+    MIN_PURCHASE NUMBER,
+    GIFTS t_gift_list
+) NESTED TABLE GIFTS STORE AS NESTED_GIFTS_TABLE;
+
+INSERT INTO GIFT_CATALOG VALUES (1, 50, t_gift_list('Mug', 'Keychain'));
+INSERT INTO GIFT_CATALOG VALUES (2, 100, t_gift_list('T-Shirt', 'Cap', 'Stickers'));
+INSERT INTO GIFT_CATALOG VALUES (3, 200, t_gift_list('Backpack', 'Water Bottle', 'Notebook', 'Pen'));
+
+COMMIT;
+
+SELECT * FROM GIFT_CATALOG;
